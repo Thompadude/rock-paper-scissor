@@ -4,10 +4,10 @@ from Shape import Shape
 shape = 0
 while shape < 1 or shape > 3:
     try:
-        shape = int(input("Choose your shape.\n1. Rock\n2. Paper\n3. Scissor\nInput: "))
+        shape = int(input("Type a number and click enter.\n1 Rock\n2 Paper\n3 Scissor\nInput: "))
         if shape < 0:
             print("Number too low")
-        else:
+        elif shape > 3:
             print("Number too high")
     except ValueError:
         print("Invalid choice")
